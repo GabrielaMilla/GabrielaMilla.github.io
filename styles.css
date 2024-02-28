@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+*{
+   
+    margin-top: 0%;
+    padding-top: 0%;
+    box-sizing: border-box;
+
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center; 
+    width: 100%;
+    border-radius: 18px;
+     
+}
+
+div a:hover{
+    transform: scale(1.6);
+}
+
+
+header img{
+    width: 100px;
+}
+
+h2{
+    color: #0274b6;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 20px 20px 20px;
+}
+.contenedor img{
+    width: 150px;
+    height: 150px;
+    border-radius: 300%;
+    
+}
+.caja img:hover{
+    transform: scale(1.1);
+}
+.caja{
+    display: flex;
+    width: 98%;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.caja p{
+    font-size: 22px;
+}
+
+section img{
+    border-radius: 50%;
+    height: 310px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+} 
+header ul li{
+    margin: 20px;
+    
+}
+
+body{
+    background-color: black;
+}
+
+img{
+    width: 350px;
+    
+}
+h1{
+    font-size: 65px;
+    color: #54c02e;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-justify: center;
+    justify-content: center;
+}
+.redes a:hover{
+    color: rgb(245, 230, 230);
+
+}
+    
+
+
+*/ barra de navegacion desplegable */
+
+.header .menu-horizontal li a{
+    justify-content: space-around;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal li a{
+    display: block;
+    padding: 25px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-family: lastica;
+    font-size: 24px;
+    
+}
+.menu-horizontal li:hover{
+    background-color: #56bd30;
+    width: 100%;
+    height: 60%;
+}
+.menu-horizontal li:hover{
+    text-decoration: #e9e1e1;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 161px;
+    background-color: #0274b6;
+}
+
+.menu-vertical li{
+    color: #fff;
+    
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+}
+
+
+.animationlogo{
+    animation: movimiento 2.5s linear infinite;
+}
+
+
+.burbuja{
+    
+    border-radius: 50%;
+    background: #64ec09;
+    
+
+    position: absolute;
+    bottom: -150;
+    
+    animation: burbujas 3s alternate-reverse infinite;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 2s;
+    animation-delay: 3s;
+}
+.burbuja:nth-child(3){
+    width: 60px;
+    height: 60px;
+    left: 40%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+
+.burbuja:nth-child(4){
+    width: 80px;
+    height: 80px;
+    left: 65%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+.burbuja:nth-child(5){
+    width: 110px;
+    height: 110px;
+    left: 85%;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+.burbuja:nth-child(6){
+    width: 80px;
+    height: 80px;
+    left: 100%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+.burbuja:nth-child(7){
+    width: 42px;
+    height: 42px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+.burbuja:nth-child(8){
+    width: 60px;
+    height: 60px;
+    left: 8%;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+.burbuja:nth-child(9){
+    width: 80px;
+    height: 80px;
+    left: 94%;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.burbuja:nth-child(10){
+    width: 90px;
+    height: 90px;
+    left: 25%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 50;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: 20;
+    }
+    100%{
+            bottom: 100vh;
+            opacity: 50;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
